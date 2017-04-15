@@ -1,4 +1,5 @@
 # renoscoin-docker
+Build locally:
 
 1. git clone https://github.com/expert-soft/renoscoin-docker.git
 2. docker build -t renoscoin-docker renoscoin-docker/
@@ -6,6 +7,10 @@
 4. cp renoscoin-docker/renoscoin.conf renoscoin_data/
 5. docker run -d -v {$PWD}/renoscoin_data:/root/renoscoin/data renoscoin-docker /bin/bash -c "/root/renoscoin/app/start.sh"
 
+Get from docker hub:
+```
+$ docker pull onitsoft/renoscoin-docker:latest
+```
 ## License
 
 This program is free software: you can redistribute it and/or modify
