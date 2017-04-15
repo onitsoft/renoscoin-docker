@@ -11,8 +11,6 @@
   
     $ docker pull onitsoft/renoscoin-docker:latest
     
-
-```
 2. Run
 ```
 $ docker run -d -v {$PWD}/renoscoin_data:/root/renoscoin/data renoscoin-docker /bin/bash -c "/root/renoscoin/app/start.sh"
