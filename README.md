@@ -1,16 +1,17 @@
 # renoscoin-docker
 1.Build:
 
-    A. locally:
-    
-    `$ git clone https://github.com/expert-soft/renoscoin-docker.git`
+  A. locally:
+    ```
+    $ git clone https://github.com/expert-soft/renoscoin-docker.git
     $ docker build -t renoscoin-docker renoscoin-docker/
+    ```
     
-    
-    B. Get from docker hub:
-   
+  B. Get from docker hub:
+    ```
     $ docker pull onitsoft/renoscoin-docker:latest
-
+    ```
+    
 2. mkdir renoscoin_data
 3. cp renoscoin-docker/renoscoin.conf renoscoin_data/
 4. docker run -d -v {$PWD}/renoscoin_data:/root/renoscoin/data renoscoin-docker /bin/bash -c "/root/renoscoin/app/start.sh"
