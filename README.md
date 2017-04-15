@@ -3,7 +3,7 @@
 
   A. locally:
   
-    $ git clone https://github.com/expert-soft/renoscoin-docker.git
+    $ git clone https://github.com/onitsoft/renoscoin-docker.git
     $ docker build -t renoscoin-docker renoscoin-docker/
    
     
