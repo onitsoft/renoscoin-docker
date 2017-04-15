@@ -2,12 +2,14 @@
 1.Build:
 
   A. locally:
+  
     ```
     $ git clone https://github.com/expert-soft/renoscoin-docker.git
     $ docker build -t renoscoin-docker renoscoin-docker/
     ```
     
   B. Get from docker hub:
+  
     ```
     $ docker pull onitsoft/renoscoin-docker:latest
     ```
