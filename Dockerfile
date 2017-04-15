@@ -24,7 +24,7 @@ ADD renoscoin.conf renoscoin/data/renoscoin.conf
 
 WORKDIR /root/renoscoin/app
 
-EXPOSE 8332
-EXPOSE 8333
+EXPOSE 65222
+EXPOSE 65223
 
 CMD ["/bin/bash"]
