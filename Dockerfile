@@ -20,7 +20,7 @@ RUN mkdir renoscoin && \
 ADD app/ renoscoin/app/
 ADD start.sh renoscoin/app/start.sh
 RUN chmod -R 700 renoscoin/app/*
-ADD renoscoin.conf renoscoin/data/renoscoin.conf
+ADD renoscoin_data/renoscoin.conf renoscoin/data/renoscoin.conf
 
 WORKDIR /root/renoscoin/app
 
