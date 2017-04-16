@@ -11,7 +11,16 @@
   
     $ docker pull onitsoft/renoscoin-docker:latest
     
-2. Run
+
+2. create shared volume
+```
+$ mkdir renoscoin_data
+```
+3. coppy the renoscoing config file into the share volume
+``` 
+$ cp renoscoin-docker/renoscoin.conf renoscoin_data/
+```
+4. 
 ```
 $ docker run -d -p -p 65223:65223 -v {$PWD}/renoscoin_data:/root/renoscoin/data renoscoin-docker /bin/bash -c "/root/renoscoin/app/start.sh"
 ```
