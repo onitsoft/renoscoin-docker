@@ -3,7 +3,7 @@
 
   A. locally:
   
-    $ git clone https://github.com/expert-soft/renoscoin-docker.git
+    $ git clone https://github.com/onitsoft/renoscoin-docker.git
     $ docker build -t renoscoin-docker renoscoin-docker/
    
     
@@ -11,11 +11,9 @@
   
     $ docker pull onitsoft/renoscoin-docker:latest
     
-
-```
 2. Run
 ```
-$ docker run -d -v {$PWD}/renoscoin_data:/root/renoscoin/data renoscoin-docker /bin/bash -c "/root/renoscoin/app/start.sh"
+$ docker run -d -p -p 65223:65223 -v {$PWD}/renoscoin_data:/root/renoscoin/data renoscoin-docker /bin/bash -c "/root/renoscoin/app/start.sh"
 ```
 
 ## License
