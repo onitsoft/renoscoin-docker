@@ -19,8 +19,14 @@ $ mkdir renoscoin_data
 3. coppy the renoscoing config file into the share volume
 ``` 
 $ cp renoscoin-docker/renoscoin.conf renoscoin_data/
-(copy from GitHub raw version if you used docker hub https://raw.githubusercontent.com/onitsoft/renoscoin-docker/master/renoscoin.conf)
 ```
+
+wget from GitHub raw version if you used docker hub if you used docker-hub (`docker pull`)
+
+```
+$ cd renoscoin_data && wget https://raw.githubusercontent.com/onitsoft/renoscoin-docker/master/renoscoin.conf
+```
+
 4. Run
 ```
 $ docker run -d -p -p 65223:65223 -v {$PWD}/renoscoin_data:/root/renoscoin/data renoscoin-docker /bin/bash -c "/root/renoscoin/app/start.sh"
