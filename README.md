@@ -29,7 +29,7 @@ $ cd renoscoin_data && wget https://raw.githubusercontent.com/onitsoft/renoscoin
 
 4. Run
 ```
-$ docker run -d -p -p 65223:65223 -v {$PWD}/renoscoin_data:/root/renoscoin/data renoscoin-docker /bin/bash -c "/root/renoscoin/app/start.sh"
+$ docker run -d -p 65223:65223 -v $PWD/renoscoin_data:/root/renoscoin/data renoscoin-docker /bin/bash -c "/root/renoscoin/app/start.sh"
 ```
 
 ## License
