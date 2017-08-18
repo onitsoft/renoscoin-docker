@@ -24,6 +24,4 @@ ADD dogecoin_data/dogecoin.conf dogecoin/data/dogecoin.conf
 
 WORKDIR /root/dogecoin/app
 
-EXPOSE 64222 64223
-
 CMD ["/bin/bash"]
