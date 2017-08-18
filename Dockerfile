@@ -14,15 +14,15 @@ RUN export DEBIAN_FRONTEND=noninteractive && \
 
 WORKDIR /root
 
-RUN mkdir renoscoin && \
-    mkdir renoscoin/data
+RUN mkdir dogecoin && \
+    mkdir dogecoin/data
 
-ADD app/ renoscoin/app/
-ADD start.sh renoscoin/app/start.sh
-RUN chmod -R 700 renoscoin/app/*
-ADD renoscoin_data/renoscoin.conf renoscoin/data/renoscoin.conf
+ADD app/ dogecoin/app/
+ADD start.sh dogecoin/app/start.sh
+RUN chmod -R 700 dogecoin/app/*
+ADD dogecoin_data/dogecoin.conf dogecoin/data/dogecoin.conf
 
-WORKDIR /root/renoscoin/app
+WORKDIR /root/dogecoin/app
 
 EXPOSE 65222 65223
 

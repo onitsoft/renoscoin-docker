@@ -1,2 +1,2 @@
 #!/bin/bash
-./renoscoind -daemon=0 -conf=/root/renoscoin/data/renoscoin.conf -datadir=/root/renoscoin/data
+./dogecoind -daemon=0 -conf=/root/dogecoin/data/dogecoin.conf -datadir=/root/dogecoin/data
